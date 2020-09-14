@@ -1,0 +1,78 @@
+.masthead {
+    height: 100vh;
+    min-height: 400px;
+    background-image: url("../images/starry_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bgportfolio {
+    /* height: 100vh; */
+    min-height: 400px;
+    background-color: salmon;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-margin {
+    height: 100px;
+    background-color: purple;
+}
+
+.bg-primary {
+    background-color: purple!important;
+}
+
+.dropbtn {
+    background-color: purple;
+    color: white;
+    padding: 24px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: purple;
+}
+
+.center {
+    text-align: left;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: purple;
+    border-color: purple;
+}
