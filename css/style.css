@@ -76,3 +76,10 @@
     background-color: purple;
     border-color: purple;
 }
+
+@media screen and (max-width: 700px) {
+    .row,
+    .navbar {
+        flex-direction: column;
+    }
+}
