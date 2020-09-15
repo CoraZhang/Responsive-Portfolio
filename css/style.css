@@ -17,8 +17,13 @@
 }
 
 .footer-margin {
-    height: 100px;
+    /*height: 100px;*/
     background-color: purple;
+    position: fixed;
+    height: 100px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
 }
 
 .bg-primary {
