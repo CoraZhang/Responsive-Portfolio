@@ -82,6 +82,11 @@
             background-color: #f1f1f1
         }
         
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
         .dropdown:hover .dropdown-content {
             display: block;
         }
@@ -91,9 +96,8 @@
         }
         /* Column container */
         
-        .row {
-            display: flex;
-            flex-wrap: wrap;
+        .center {
+            text-align: left;
         }
         /* Create two unequal columns that sits next to each other */
         /* Sidebar/left column */
@@ -110,7 +114,6 @@
             background-color: white;
             padding: 20px;
         }
-        /* Fake image, just for this example */
         
         .myimg {
             background-color: white;
@@ -142,11 +145,11 @@
 
     <!-- Header -->
 
-    <div class="header">
+    <header class="header">
         <h1>Portfolio</h1>
-    </div>
+    </header>
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-        <div class="container">
+        <section class="container">
 
             <!-- Navbar -->
             <a class="navbar-brand" href="index.html">
@@ -161,7 +164,7 @@
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
-        </button>
+            </button>
 
             <!-- Navbar links -->
             <div class="dropdown">
@@ -181,13 +184,13 @@
 
 
                 </div>
-            </div>
+        </section>
     </nav>
 
 
 
     <!-- The flexible grid (content) -->
-    <div class="row">
+    <section class="row">
         <aside class="side">
             <h2>About Me</h2>
             <h5>Photo of me:</h5>
@@ -220,15 +223,15 @@
             </p>
             <br></br>
         </article>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <div class="footer">
-        <h2>@Shihan Zhang
+    <footer class="footer">
+        <h2>@by Shihan Zhang
 
             <a href="https://github.com/CoraZhang">Github</a>
         </h2>
-    </div>
+    </footer>
 
 </body>
 
