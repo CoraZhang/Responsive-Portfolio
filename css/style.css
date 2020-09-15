@@ -1,19 +1,5 @@
-.masthead {
-    height: 100vh;
+.myParagraph {
     background-color: #CCCC33;
-    min-height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bgportfolio {
-    /* height: 100vh; */
-    min-height: 400px;
-    background-color: salmon;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .text-warning {
