@@ -1,5 +1,6 @@
 .masthead {
     height: 100vh;
+    background-color: #CCCC33;
     min-height: 400px;
     background-image: url("../images/starry_background.png");
     background-size: cover;
@@ -16,14 +17,23 @@
     background-repeat: no-repeat;
 }
 
+.text-warning {
+    color: purple!important;
+}
+
 .footer-margin {
     /*height: 100px;*/
     background-color: purple;
     position: fixed;
-    height: 100px;
+    height: 60px;
     text-align: center;
+    font-size: 20px;
     bottom: 0;
     width: 100%;
+}
+
+.bg-warning {
+    background-color: purple!important;
 }
 
 .bg-primary {
