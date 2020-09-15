@@ -5,6 +5,11 @@
     <title>Page Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
     <style>
         * {
             box-sizing: border-box;
@@ -18,30 +23,71 @@
         /* Header/logo Title */
         
         .header {
-            padding: 60px;
+            padding: 24px;
             text-align: center;
-            background: #1abc9c;
+            background: darkgray;
             color: white;
         }
         /* Style the top navigation bar */
         
-        .navbar {
-            display: flex;
-            background-color: #333;
+        .bg-primary {
+            background-color: purple!important;
         }
-        /* Style the navigation bar links */
         
-        .navbar a {
+        .dropbtn {
+            background-color: purple;
+            float: right;
             color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
+            padding: 24px;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
         }
-        /* Change color on hover */
         
-        .navbar a:hover {
-            background-color: #ddd;
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+            background-color: transparent;
+            float: left;
+        }
+        
+        .dropdown-content a {
             color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .btn-primary {
+            color: #fff;
+            background-color: white;
+            border-color: purple;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: purple;
         }
         /* Column container */
         
@@ -66,8 +112,8 @@
         }
         /* Fake image, just for this example */
         
-        .fakeimg {
-            background-color: #aaa;
+        .myimg {
+            background-color: white;
             width: 100%;
             padding: 20px;
         }
@@ -92,52 +138,92 @@
 <body>
 
     <!-- Header -->
-    <div class="header">
-        <h1>My Website</h1>
-        <p>With a <b>flexible</b> layout.</p>
-    </div>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+    <div class="header">
+        <h1>Portfolio</h1>
     </div>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container">
+
+            <!-- Navbar -->
+            <a class="navbar-brand" href="index.html">
+                <img class="mr-3" src="https://images.vexels.com/media/users/3/143061/isolated/preview/aaf71ed4e387a6838e1c521fbecde77a-banana-icon-fruit-by-vexels.png" width="40" height="40" alt="Banana">Shihan Zhang
+
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-90deg-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z" />
+            </svg>
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <!-- Navbar links -->
+            <div class="dropdown">
+                <!-- Dropdown Button -->
+                <button class="dropbtn">Menu</button>
+
+
+                <!-- Navbar links -->
+                <div class="dropdown-content">
+
+
+                    <a class="nav-link" href="index.html">Home</a>
+
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+
+                    <a class="nav-link" href="contact.html">Contact</a>
+
+
+                </div>
+            </div>
+    </nav>
+
+
 
     <!-- The flexible grid (content) -->
     <div class="row">
-        <div class="side">
+        <aside class="side">
             <h2>About Me</h2>
             <h5>Photo of me:</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div><br>
-            <div class="fakeimg" style="height:60px;">Image</div>
-        </div>
-        <div class="main">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            <img class="myimg" src="https://i0.wp.com/www.remodelaholic.com/wp-content/uploads/2015/08/4girlsflower.jpg?fit=1160%2C1842&ssl=1" alt="Girl"></img>
+            <p>I like the hair style</p>
+            <h3>Education</h3>
+            <p>University of Toronto, Electrical Engineering</p>
+            <img class="myimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/1200px-Utoronto_coa.svg.png" alt="School Flag"></img><br>
+            <img class="myimg" src="https://t3.ftcdn.net/jpg/01/62/86/78/240_F_162867872_opg45Veh2RrgrfBtCtZCKBd1SdNqPo83.jpg" alt="Mobile Phone"></image><br>
+        </aside>
+        <article class="main">
+            <h2>Internship Experience</h2>
+            <h5>Ericsson, Sep 2018 - Sep 2019</h5>
+
+            <p>Job Description</p>
+            <p>
+                • Integrated different versions of code in C++, Perl, Python and Node.js that updates real-time map information of route tracking system in order to improve deliver efficiency of products
+                <br></br>
+                • Created testing scripts to assist scientists on how paints of covers, weather conditions, building materials and other factors affected the overall quality of mobile phone signal.
+
             </p>
             <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            <h2>Aacademic Projects</h2>
+            <h5>Reflection Chatbot</h5>
+            <img class="myimg" src="https://cdn4.vectorstock.com/i/thumb-large/79/53/simple-chatbot-hotline-logo-vector-18617953.jpg" alt="Chatbot"></img>
+            <p>Final Year</p>
+            <p>
+                Created a Chatbot based on machine learning that help people examine their core values and consider how they are reflected by their value
+
             </p>
-        </div>
+        </article>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <h2>Footer</h2>
+        <h2>@Shihan Zhang
+
+            <a href="https://github.com/CoraZhang">Github</a>
+        </h2>
     </div>
 
 </body>
