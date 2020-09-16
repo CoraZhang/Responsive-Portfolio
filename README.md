@@ -1,8 +1,9 @@
 # Unit 02 CSS and Bootstrap Homework: Responsive Portfolio
 Web deployed at : https://corazhang.github.io/Responsive-Portfolio/
 * Click my name/arrow or the banana icon/ dropdown menu on the nav bar to go back to the home page
+* Put the mouse at the Menu, it will show all navigations
 * The sticky footer is added to each page
-* Media queries added to fit to different size of screen
+* Media queries added to fit to different sizes of screen
 * Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. As a developer, you will likely be asked to create a mobile-first application or add responsive design to an existing application. 
 
 
