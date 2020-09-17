@@ -5,6 +5,10 @@ Web deployed at : https://corazhang.github.io/Responsive-Portfolio/
 * The sticky footer is added to each page
 * Media queries added to fit to different sizes of screen
 * Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. As a developer, you will likely be asked to create a mobile-first application or add responsive design to an existing application. 
+* ![alt text](Images/Contact.png "Conatct Info Page Screenshot")
+* ![alt text](Images/index.png "Conatct Info Page Screenshot")
+* ![alt text](Images/Portfolio.png "Conatct Info Page Screenshot")
+
 
 
 ## Directions
